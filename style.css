@@ -111,7 +111,8 @@ body::after {
 .role,
 h1 span,
 h2 span,
-.project-link {
+.project-link,
+.portfolio-link {
   color: var(--blue);
 }
 
@@ -214,7 +215,8 @@ h1 {
 .contact p,
 .skill-box p,
 .about-side li,
-.cert-text {
+.cert-text,
+.portfolio-note p {
   color: var(--muted);
   line-height: 1.78;
 }
@@ -347,7 +349,8 @@ h1 {
 .skill-box:hover,
 .about-side:hover,
 .about-main:hover,
-.cert-card:hover {
+.cert-card:hover,
+.portfolio-note:hover {
   transform: translateY(-8px);
   border-color: var(--border-strong);
   box-shadow:
@@ -425,7 +428,8 @@ h1 {
   font-weight: 600;
 }
 
-.project-link:hover {
+.project-link:hover,
+.portfolio-link:hover {
   text-shadow: 0 0 14px rgba(97, 168, 255, 0.45);
 }
 
@@ -443,6 +447,22 @@ h1 {
 
 .about-main p + p {
   margin-top: 18px;
+}
+
+.portfolio-note {
+  margin-top: 24px;
+  padding: 22px;
+  border: 1px solid rgba(97, 168, 255, 0.18);
+  border-radius: 18px;
+  background: rgba(10, 16, 30, 0.55);
+  transition: transform 0.32s ease, border-color 0.32s ease, box-shadow 0.32s ease;
+}
+
+.portfolio-link {
+  display: inline-block;
+  margin-top: 14px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .about-side h3 {
@@ -579,7 +599,8 @@ h1 {
 .skill-box,
 .about-main,
 .about-side,
-.cert-card {
+.cert-card,
+.portfolio-note {
   will-change: transform;
 }
 
